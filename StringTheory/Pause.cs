@@ -10,23 +10,20 @@ namespace StringTheory
     {
         private int time;
         private int currentTime;
+        private bool skippable = false;
         private bool skip = false;
-        public Pause(int ms)
+        public Pause(int ms, bool skippable = false)
         {
             this.time = ms;
-
+            this.skippable = skippable;
         }
 
         public override void Run()
         {
-            // Clear input buffer
-            //while (Console.KeyAvailable)
-            //    Console.ReadKey(true);
-
             while (!skip && (currentTime < time))
             {
 
-                if(Console.KeyAvailable)
+                if(Console.KeyAvailable && skippable)
                 {
                     // Get input when in buffer
                     ConsoleKeyInfo cki = Console.ReadKey(true);

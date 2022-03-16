@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("StringTheory")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("The Academy of Interactive Entertainment Ltd")]
+[assembly: AssemblyCompany("Justin Etchell Games")]
 [assembly: AssemblyProduct("StringTheory")]
-[assembly: AssemblyCopyright("Copyright © The Academy of Interactive Entertainment Ltd 2022")]
+[assembly: AssemblyCopyright("Copyright © Justin Etchell 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
