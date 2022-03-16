@@ -30,24 +30,30 @@ test.StartSequence();
 new DynamicString("I am not part of a sequence!", delay: 55, delayPerChar: true).Run();
 ```
 
-##Events
-###Choose
-###DynamicString
+## Events
+### Choose
+### DynamicString
 Creates a new string
+```
 string text = "Some text to display"
 ConsoleColour colour = ConsoleColor.White // use the ConsoleColor enum to pick the forground text colour.
 bool newLine = true // define if the console cursor should move to the next line after rendering this text.
 int delay = 0 // define the amount of time to delay, affects delayPerChar (See Below)
 bool delayPerChar // defines if the delay should be between words, or between characters.
 bool clearScreen = false // define is the console screen should be cleared before rendering this string.
-###Function
+```
+### Function
 Accepts a single argument of type STFunc which is an anonymous method with no return type. This lets you sequence some operation to be performed.
-###Path
+### Path
 Not currently in use.
-###Pause
+### Pause
 Creates a pause between events.
+```
 int ms = 500 //amount of time in miliseconds to sleep before.
 bool skippable // define if this event and be skipped by pressing return or space.
-###PressContinue
+```
+### PressContinue
 Creates an event that requests the user press return or spacebar to continue execution of the application.
+```
 string prompt = ">\tContinue" // Default string, can be overridden.
+```
